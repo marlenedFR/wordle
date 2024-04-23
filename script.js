@@ -126,6 +126,7 @@ const deleteLast = () => {
 };
 
 const submitGuess = () => {
+  if (currentGuess.length === 0) return;
   if (currentGuess.length === wordle.length) {
     let guess = currentGuess.join("");
     for (let i = 0; i < wordle.length; i++) {
