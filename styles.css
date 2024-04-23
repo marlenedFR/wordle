@@ -21,10 +21,22 @@ html {
 
 @media (max-width: 480px) {
   .key-row {
-    max-width: 100%;
-    height: auto;
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    /* border: 2px solid red; */
+    border: 2px solid red;
+  }
+
+  .key {
+    flex: 1 1 18%;🎨
+    margin: 0.5%;
+    height: 40px;
+    min-width: 40px;
+    font-size: 5vw;
+  }
+
+  .key.special {
+    flex: 1 1 36%;
   }
 }
 
