@@ -126,7 +126,10 @@ const deleteLast = () => {
 };
 
 const submitGuess = () => {
-  if (currentGuess.length === 0) return;
+  if (currentGuess.length === 0) {
+    console.log("Aucune lettre saisie. Mot non soumis.");
+    return;
+  }
   if (currentGuess.length === wordle.length) {
     let guess = currentGuess.join("");
     for (let i = 0; i < wordle.length; i++) {
