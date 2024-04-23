@@ -19,19 +19,12 @@ html {
   padding: 0;
 }
 
-@media (max-width: 450px) {
-  #app-container {
-    width: 100%;
-    height: auto;
-    /* border: 2px solid red; */
-  }
-
-  .key {
-    flex: 1 1 18%;
-  }
-
+@media (max-width: 480px) {
   .key-row {
+    max-width: 100%;
+    height: auto;
     flex-wrap: wrap;
+    /* border: 2px solid red; */
   }
 }
 
