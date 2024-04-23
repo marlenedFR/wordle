@@ -23,20 +23,51 @@ html {
   .key-row {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    border: 2px solid red;
+    flex-wrap: nowrap;
   }
 
-  .key {
-    flex: 1 1 18%;
-    margin: 0.5%;
-    height: 40px;
-    min-width: 40px;
-    font-size: 5vw;
+  #key-A,
+  #key-B,
+  #key-C,
+  #key-D,
+  #key-E,
+  #key-F,
+  #key-G,
+  #key-H,
+  #key-I,
+  #key-J,
+  #key-K,
+  #key-L,
+  #key-M,
+  #key-N,
+  #key-O,
+  #key-P,
+  #key-Q,
+  #key-R,
+  #key-S,
+  #key-T,
+  #key-U,
+  #key-V,
+  #key-W,
+  #key-X,
+  #key-Y,
+  #key-Z {
+    flex: 1 1 5%;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    font-size: 4vw;
+    /* border: 2px solid red; */
   }
 
   .key.special {
-    flex: 1 1 36%;
+    order: 1;
+    flex: 1 1 18%;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    font-size: 4vw;
+    /* border: 2px solid red; */
   }
 }
 
